@@ -2,7 +2,7 @@
 
 ![](https://img.shields.io/badge/python-3-brightgreen.svg) ![](https://img.shields.io/badge/plotly-4.14-red.svg) ![](https://img.shields.io/badge/dash-1.2-blue.svg)
 
-![Preview](https://github.com/rhollings/Stock_Forecasting/blob/main/images/dashboard.png)
+![Preview](https://github.com/rhollings/Stock_Forecasting/blob/master/images/dashboard.png?raw=true)
 
 ### Description :
 
