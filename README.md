@@ -27,4 +27,6 @@ OR
 pip3 install -r requirements.txt 
 
 python run.py
+OR
+python3 run.py
 ```
