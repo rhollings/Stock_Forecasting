@@ -50,7 +50,7 @@ def form_submit(stock_click, forecast_click, tickr, start_date, end_date, foreca
             open_close_graph, moving_avg_graph = stock.get_graphs()
             ticker_graph = generate_ticker_graph(open_close_graph)
 
-            return dbc.Row([ticker_detail, ticker_graph], align="center", no_gutters=True)
+            return dbc.Row([ticker_detail, ticker_graph], align="center")
         else:
             return dbc.Alert("No TICKER found!!", color="primary", dismissable=True)
     elif forecast_click and trigger == "forecast-submit":
@@ -65,7 +65,7 @@ def form_submit(stock_click, forecast_click, tickr, start_date, end_date, foreca
             graph = forecaster.get_forecast_graph(dates, y_pred)
             forecast_detail = get_forecast_detail(accuracy, graph)
 
-            return dbc.Row([ticker_detail, forecast_detail], align="center", no_gutters=True)
+            return dbc.Row([ticker_detail, forecast_detail], align="center")
         else:
             return dbc.Alert("No TICKER found!!", color="primary", dismissable=True)
     else:

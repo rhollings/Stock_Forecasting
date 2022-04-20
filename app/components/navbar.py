@@ -1,8 +1,8 @@
 import datetime
 from datetime import date
 import dash_bootstrap_components as dbc
-import dash_core_components as dcc
-import dash_html_components as html
+from dash import dcc
+from dash import html
 from dash.dependencies import Input, Output, State
 
 from ..app import app
@@ -20,7 +20,6 @@ navbar = dbc.Navbar(
                     dbc.Col(dbc.NavbarBrand("Stock Forecasting", className="ml-2")),
                 ],
                 align="center",
-                no_gutters=True,
             ),
             href="/"
         ),

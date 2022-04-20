@@ -1,7 +1,7 @@
 from datetime import date, timedelta
 import dash_bootstrap_components as dbc
-import dash_html_components as html
-import dash_core_components as dcc
+from dash import html
+from dash import dcc
 
 stock_form = dbc.Row(
     [
@@ -16,7 +16,6 @@ stock_form = dbc.Row(
         
         dbc.Col(dbc.Button("Filter", color="primary", id="form-submit"), width="3", align="center"),
     ],
-    no_gutters=False,
     className="ml-auto flex-nowrap mt-md-0",
     align="end",
 )
