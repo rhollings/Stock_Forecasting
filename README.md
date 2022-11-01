@@ -23,12 +23,8 @@ git clone https://github.com/rhollings/Stock_Forecasting.git
 cd stockforecasting
 
 pip install -r requirements.txt
-OR
-pip3 install -r requirements.txt 
 
 python run.py
-OR
-python3 run.py
 ```
 
 <!--
